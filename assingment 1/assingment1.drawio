@@ -1,0 +1,106 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.2">
+  <diagram name="Online-Exam-HLD" id="wyfh8H7UVrLF9g4ehZX9">
+    <mxGraphModel dx="2050" dy="2184" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5nchVapuVEmgQj6k0l-F-44" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Users (Students/Admin)" vertex="1">
+          <mxGeometry height="60" width="180" x="670" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-45" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="API Gateway&#xa;- Auth Validation&#xa;- Rate Limiting&#xa;- Load Balancing&#xa;- Routing" vertex="1">
+          <mxGeometry height="120" width="220" x="920" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-118" edge="1" parent="1" source="5nchVapuVEmgQj6k0l-F-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="5nchVapuVEmgQj6k0l-F-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-46" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Auth Service&#xa;- Register/Login&#xa;- JWT Generation&#xa;- Role Management" vertex="1">
+          <mxGeometry height="100" width="200" x="1220" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-113" edge="1" parent="1" source="5nchVapuVEmgQj6k0l-F-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="5nchVapuVEmgQj6k0l-F-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-47" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Exam Service&#xa;- Create Exam&#xa;- Schedule Exam&#xa;- Assign Questions" vertex="1">
+          <mxGeometry height="100" width="200" x="1220" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-48" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Attempt Service&#xa;- Start Exam&#xa;- Save Answers&#xa;- Submit Exam" vertex="1">
+          <mxGeometry height="100" width="200" x="1220" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-49" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Evaluation Service&#xa;- MCQ Strategy&#xa;- Coding Strategy&#xa;- Descriptive Strategy" vertex="1">
+          <mxGeometry height="110" width="200" x="1220" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-50" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Result Service&#xa;- Score Calculation&#xa;- Ranking&#xa;- Publish Result" vertex="1">
+          <mxGeometry height="100" width="200" x="1220" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-119" edge="1" parent="1" source="5nchVapuVEmgQj6k0l-F-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="5nchVapuVEmgQj6k0l-F-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-51" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Notification Service&#xa;- Email&#xa;- SMS&#xa;- Push Alerts" vertex="1">
+          <mxGeometry height="100" width="200" x="1520" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-116" edge="1" parent="1" source="5nchVapuVEmgQj6k0l-F-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="5nchVapuVEmgQj6k0l-F-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-52" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Redis Cache&#xa;- Active Sessions&#xa;- Leaderboard&#xa;- JWT Blacklist" vertex="1">
+          <mxGeometry height="150" width="130" x="1520" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-117" edge="1" parent="1" source="5nchVapuVEmgQj6k0l-F-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="5nchVapuVEmgQj6k0l-F-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-53" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Kafka / Message Queue&#xa;- ExamSubmitted Event&#xa;- ResultPublished Event" vertex="1">
+          <mxGeometry height="130" width="180" x="1520" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-54" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;" value="Students DB (PostgreSQL)" vertex="1">
+          <mxGeometry height="60" width="180" x="1770" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-55" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;" value="Exam DB (PostgreSQL)" vertex="1">
+          <mxGeometry height="60" width="180" x="1770" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-56" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;" value="Result DB (PostgreSQL)" vertex="1">
+          <mxGeometry height="60" width="180" x="1770" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-57" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;" value="Questions DB (MongoDB)" vertex="1">
+          <mxGeometry height="60" width="180" x="1770" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-58" edge="1" parent="1" source="5nchVapuVEmgQj6k0l-F-44" target="5nchVapuVEmgQj6k0l-F-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-59" edge="1" parent="1" source="5nchVapuVEmgQj6k0l-F-45" target="5nchVapuVEmgQj6k0l-F-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-60" edge="1" parent="1" source="5nchVapuVEmgQj6k0l-F-45" target="5nchVapuVEmgQj6k0l-F-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-61" edge="1" parent="1" source="5nchVapuVEmgQj6k0l-F-45" target="5nchVapuVEmgQj6k0l-F-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-62" edge="1" parent="1" source="5nchVapuVEmgQj6k0l-F-48" target="5nchVapuVEmgQj6k0l-F-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-63" edge="1" parent="1" source="5nchVapuVEmgQj6k0l-F-49" target="5nchVapuVEmgQj6k0l-F-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-64" edge="1" parent="1" source="5nchVapuVEmgQj6k0l-F-50" target="5nchVapuVEmgQj6k0l-F-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-108" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;font style=&quot;font-size: 26px;&quot;&gt;Functional Requirements&lt;/font&gt;" vertex="1">
+          <mxGeometry height="38" width="340" x="840" y="-193" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-109" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Non Functional Requirements&lt;/font&gt;" vertex="1">
+          <mxGeometry height="58" width="340" x="1590" y="-193" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-110" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=16;" value="&lt;li data-start=&quot;1466&quot; data-end=&quot;1504&quot;&gt;&lt;p data-start=&quot;1468&quot; data-end=&quot;1504&quot;&gt;&lt;strong data-start=&quot;1468&quot; data-end=&quot;1483&quot;&gt;Scalability&lt;/strong&gt; – Scale up or scale down on basis of users.&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;1555&quot; data-end=&quot;1592&quot;&gt;&lt;p data-start=&quot;1557&quot; data-end=&quot;1592&quot;&gt;&lt;b&gt;Latency: 80-100ms&lt;/b&gt;&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;1555&quot; data-end=&quot;1592&quot;&gt;&lt;p data-start=&quot;1557&quot; data-end=&quot;1592&quot;&gt;&lt;b&gt;Availability &amp;gt;&amp;gt;&amp;gt; Consistency&lt;/b&gt;&lt;/p&gt;&lt;/li&gt;" vertex="1">
+          <mxGeometry height="218" width="310" x="1605" y="-163" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-111" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 28px;&quot;&gt;&lt;b&gt;Q3. Design an HLD for an Online Examination System applying SRP and OCP&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="1050" x="1485" y="-313" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-112" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Student:&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Register/Login&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Attempt the exams&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;View the results&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Admin/System:&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Create exams&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Evaluate&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Add questions&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Publish results&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="270" width="190" x="894" y="-118" as="geometry" />
+        </mxCell>
+        <mxCell id="5nchVapuVEmgQj6k0l-F-115" edge="1" parent="1" source="5nchVapuVEmgQj6k0l-F-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.02;entryY=0.426;entryDx=0;entryDy=0;entryPerimeter=0;" target="5nchVapuVEmgQj6k0l-F-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
